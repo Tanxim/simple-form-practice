@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label" for="number">Age(optional) <input id="number" type="number" placeholder="age" min="18" max="100" /></label>
+        <label for="dropdown">How are you feeling?
+          <select id="dropdown">
+            <option value="">select your mood</option>
+            <option value="1">Happy</option>
+            <option value="2">Sad</option>
+          </select>
+        <label>Wil you share with your friend?</lable>
+        </label>
+        <label for="yes"><input id="yes" type="radio" value="yes" name="yes-no"> Yes ^_^</label>
+        <label for="no"><input id="no" type="radio" value="no" name="yes-no"> No :(</label>
+        <label for="terms">
+          <input value="accept" id="terms" type="checkbox" /> i accept</label>
+        <label for="term">
+          <input value="alsoaccept" id="term" type="checkbox" /> yes sure</label>
+        <label for="comment">leave a comment
+          <textarea id="comment" rows="3" cols="30" placeholder="comment..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="submit" />
+    </form>
+  </body>
+</html>
